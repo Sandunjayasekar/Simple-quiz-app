@@ -3,7 +3,7 @@ const questions = [
         question : "Which is the largest animal in the world ?",
         answers : [
             {text: "Shark", correct: false},
-            {text: "Blue whale", correct: false},            
+            {text: "Blue whale", correct: true},            
             {text: "Elephant", correct: false},
             {text: "Giraffe", correct: false},
         ]
@@ -71,12 +71,12 @@ const questions = [
 
  function resetState() {
     nextButton.style.display = "none";
-    while(answerButtons.firstChildChild){
+    while(answerButtons.firstChil){
         answerButtons.removeChild(answerButtons.firstChild);
     }
  }
 
-function selectAnswer(){
+function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
