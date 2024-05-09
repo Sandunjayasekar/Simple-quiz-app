@@ -53,4 +53,8 @@ const questions = [
     let currentQuestiion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestiion.question;
- }
+ 
+    const button = document.createElement("button");
+    button.innerHTML = answers.text;
+    button.classList.add("btn");answerButton.appendChild(button);
+}
