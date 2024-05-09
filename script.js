@@ -71,12 +71,12 @@ const questions = [
 
  function resetState() {
     nextButton.style.display = "none";
-    while(answerButtons.firstChildChild){
+    while(answerButtons.firstChil){
         answerButtons.removeChild(answerButtons.firstChild);
     }
  }
 
-function selectAnswer(){
+function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
