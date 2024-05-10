@@ -78,7 +78,7 @@ const questions = [
 
 function selectAnswer(e){
     const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
+    const isCorrect = selectedBtn.dataset.correct === "false";
     if(isCorrect){
         selectedBtn.classList.add("correct");
     }else {
