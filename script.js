@@ -82,7 +82,7 @@ function selectAnswer(e){
     if(isCorrect){
         selectedBtn.classList.add("correct");
     }else {
-        selectedBtn.classList.add("incorrect");
+        selectedBtn.classList.add("inn");
     }
 }
 
